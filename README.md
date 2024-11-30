@@ -20,6 +20,7 @@ This project is part of a Data Mining homework assignment aimed at implementing 
 This project explores:
 - **Task 1:** The implementation and evaluation of K-Means clustering with different distance metrics (Euclidean, Cosine, and Jaccard).
 - **Task 2:** The development of a recommender system using collaborative filtering and matrix factorization techniques, evaluated using MAE and RMSE.
+    - The movie dataset used in this project can be accessed from Kaggle: [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset)
 
 The project provides insights into clustering performance, recommender system evaluation metrics, and the impact of parameters such as similarity metrics and neighborhood sizes.
 
