@@ -2,7 +2,7 @@
 
 This project is part of a Data Mining homework assignment aimed at implementing and analyzing clustering and recommender system techniques using real-world datasets. The project is divided into two main tasks: K-Means Clustering and Recommender Systems.
 
-### Table of Contents
+### **Table of Contents**
 
 1.	Introduction
 2.	Task 1: K-Means Clustering
@@ -14,10 +14,8 @@ This project is part of a Data Mining homework assignment aimed at implementing 
     - Implementation Details
     - Results
 4.	Key Takeaways
-5.	Repository Structure
-6.	How to Run
 
-## **Introduction**
+### **Introduction**
 
 This project explores:
 - **Task 1:** The implementation and evaluation of K-Means clustering with different distance metrics (Euclidean, Cosine, and Jaccard).
@@ -78,62 +76,28 @@ To build a movie recommender system and evaluate collaborative filtering methods
 
 #### **Results**
 
-	•	Model Comparison:
-	•	PMF: RMSE = 0.8973, MAE = 0.6913 (Best overall performance)
-	•	User-based CF: RMSE = 0.9679, MAE = 0.7439
-	•	Item-based CF: RMSE = 0.9345, MAE = 0.7207
-	•	Impact of Similarity Metrics:
-	•	MSD provided the best RMSE for both User-based and Item-based CF.
-	•	Cosine performed the worst.
-	•	Effect of Neighbors:
-	•	User-based CF performed best at K=20.
-	•	Item-based CF performed best at K=50.
-	•	Key Takeaway: PMF is the best overall method, while similarity metrics and neighborhood sizes significantly impact CF performance.
+1. Model Comparison:
+    - PMF: RMSE = 0.8973, MAE = 0.6913 (Best overall performance)
+	- User-based CF: RMSE = 0.9679, MAE = 0.7439
+    - Item-based CF: RMSE = 0.9345, MAE = 0.7207
 
-Key Takeaways
+2. Impact of Similarity Metrics:
+    - MSD provided the best RMSE for both User-based and Item-based CF.
+    - Cosine performed the worst.
 
-	1.	K-Means Clustering:
-	•	Euclidean Distance is the most effective metric, achieving the best SSE and predictive accuracy.
-	•	Convergence efficiency varies across metrics, with Euclidean being the fastest.
-	2.	Recommender Systems:
-	•	PMF is the most accurate model in terms of MAE and RMSE.
-	•	MSD is the best similarity metric for collaborative filtering.
-	•	The optimal number of neighbors varies between User-based (K=20) and Item-based CF (K=50).
+3. Effect of Neighbors:
+    - User-based CF performed best at K=20.
+    - Item-based CF performed best at K=50.
 
-Repository Structure
+- Key Takeaway: PMF is the best overall method, while similarity metrics and neighborhood sizes significantly impact CF performance.
 
-Clustering-Recommendation-Pipeline/
-├── data/                    # Contains the dataset files
-├── Task1_KMeans.ipynb       # Jupyter notebook for Task 1
-├── Task2_Recommender.ipynb  # Jupyter notebook for Task 2
-├── Homework3.pdf            # Final project deliverable
-├── README.md                # This file
+#### **Key Takeaways**
 
-How to Run
+1.	K-Means Clustering:
+    - Euclidean Distance is the most effective metric, achieving the best SSE and predictive accuracy.
+    - Convergence efficiency varies across metrics, with Euclidean being the fastest.
 
-	1.	Clone the repository:
-
-git clone https://github.com/sriranjan06/Clustering-Recommendation-Pipeline.git
-
-
-	2.	Install required libraries:
-
-pip install -r requirements.txt
-
-
-	3.	Open the Jupyter notebooks:
-
-jupyter notebook
-
-
-	4.	Run Task1_KMeans.ipynb and Task2_Recommender.ipynb to reproduce the results.
-
-Contributors
-
-	•	Sriranjan Srikanth
-MS Computer Science, Arizona State University
-GitHub Profile
-
-For any queries or feedback, feel free to reach out through the repository’s issues section.
-
-This README provides a detailed overview of the project and ensures clarity for both graders and collaborators. Let me know if you need further refinements! 😊
+2.	Recommender Systems:
+    - PMF is the most accurate model in terms of MAE and RMSE.
+    - MSD is the best similarity metric for collaborative filtering.
+    - The optimal number of neighbors varies between User-based (K=20) and Item-based CF (K=50).
